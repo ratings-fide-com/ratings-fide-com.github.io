@@ -1,0 +1,38 @@
+@media screen and (max-width:414px) {
+	.table-rating table thead tr th {
+		padding: 10px 5px!important;
+	}
+
+	.table-rating table tbody tr td {
+		padding: 10px 5px 10px;
+	}
+
+	.mobile-btn {
+		font: normal 400 14px/22px Roboto,sans-serif!important;
+	}
+
+	.rating-sort {
+		width: 50%!important;
+	}
+
+	.mobile-btn {
+		display: inline-block;
+		margin-left: 60%;
+		text-align: center;
+		width: 40%;
+	}
+
+
+.logo-name {
+
+    font-family: "Bitstream Vera Serif",serif !important;
+	font-size: 12px !important;
+
+}
+.table2
+{
+ width: 100%;
+ display: flex; 
+ font-size: 12px;
+}
+}

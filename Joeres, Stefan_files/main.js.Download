@@ -1,0 +1,106 @@
+$(document).ready(function () {
+
+
+
+	/* Menu change icon */
+	$('.navbar-toggler').click(function () {
+		$(this).toggleClass('current')
+	});
+
+
+	$('.sign-in-form').submit(function (event) {
+		event.preventDefault();
+
+		$.ajax({
+			type: $(this).attr('method'),
+			url: $(this).attr('action'),
+			data: new FormData(this),
+			dataType: 'json',
+			contentType: false,
+			cache: false,
+			processData: false,
+			success: function (result) {
+				$(".incorrect").hide('fast');
+				const date = new Date();
+        date.setSeconds(date.getSeconds() + result.expires_in);
+        Cookies.set('access_token', result.access_token, {expires: date, path: '/', domain: 'fide.com'});
+        Cookies.set('refresh_token', result.refresh_token, {expires: date, path: '/', domain: 'fide.com'});
+        const jwt = jwtJsDecode.jwtDecode(result.access_token);
+        document.getElementById("log-out-email").innerHTML = jwt.payload.user.email;
+        $.magnificPopup.close();
+			},
+			error: function (jqXHR, exception) {
+					if (jqXHR.status == 401) {
+						$(".incorrect").show();
+					}
+			},
+		});
+
+	});
+
+	$('.sign-up-form').submit(function (event) {
+		event.preventDefault();
+
+		$.ajax({
+			type: $(this).attr('method'),
+			url: $(this).attr('action'),
+			data: new FormData(this),
+			contentType: false,
+			cache: false,
+			processData: false,
+			success: function (result) {
+				$(".correct-sign-up").show();
+			},
+		});
+
+	});
+
+	$('.forgot-pass-form').submit(function (event) {
+		event.preventDefault();
+
+		$.ajax({
+			type: $(this).attr('method'),
+			url: $(this).attr('action'),
+			data: new FormData(this),
+			contentType: false,
+			cache: false,
+			processData: false,
+			success: function (result) {
+				$(".correct-pass").show();
+				$(".incorrect-pass").hide();
+			},
+			error: function (jqXHR, exception) {
+				if (jqXHR.status == 404) {
+					$(".incorrect-pass").show();
+					$(".correct-pass").hide();
+				}
+			},
+		});
+
+	});
+
+	/* Modal change visible */
+	$('.icons__user').click(function () {
+		if (Cookies.get('access_token')) {
+      $('.modal-log-out').show();
+      const jwt = jwtJsDecode.jwtDecode(Cookies.get('access_token'));
+      document.getElementById("log-out-email").innerHTML = jwt.payload.user.email;
+      $.magnificPopup.close();
+    }
+	});
+
+	$('.modal-log-out__wrapper__button').click(function () {
+		Cookies.remove('access_token', {path: '/', domain: 'fide.com'});
+    Cookies.remove('refresh_token', {path: '/', domain: 'fide.com'});
+		$('.modal-log-out').hide();
+	});
+
+	$(document).mouseup(function (e) {
+		var container = $(".modal-log-out");
+		if (container.has(e.target).length === 0) {
+			container.hide();
+		}
+	});
+
+});
+

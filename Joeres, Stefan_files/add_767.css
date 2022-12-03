@@ -1,0 +1,44 @@
+@media (max-width:767.98px) {
+.selector_i {
+	height: 30px;
+	font: normal 12px Roboto,sans-serif;
+}
+
+.select-side_i img {
+	margin-top: 5px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.modal-button2 {
+
+	font: normal 12px Roboto,sans-serif;
+
+}
+
+.title-page-sm {
+   
+    font: normal 300 16px/normal Roboto,sans-serif;
+    
+}
+
+table.dataTable thead th, table.dataTable thead td {
+font-size: 11px;
+padding: 3px;
+
+
+}
+table.dataTable tfoot th, table.dataTable tfoot td {
+font-size: 11px;
+padding: 3px;
+
+}
+.foa_holder
+{
+display:block;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+}

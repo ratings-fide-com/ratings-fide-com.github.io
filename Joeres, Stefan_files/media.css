@@ -1,0 +1,436 @@
+/* Home Page */
+
+@media screen and (max-width: 1199px) {
+  .navbar-nav .nav-item {
+    margin: 0 20px !important;
+  }
+  .navbar-nav .nav-item:first-child {
+    margin: 0 20px 0 0 !important;
+  }
+  .navbar-nav .nav-item:last-child {
+    margin: 0 0 0 20px !important;
+  }
+  .social-header .icon-top {
+    height: 25px !important;
+    width: 20px !important;
+  }
+  .search_bar {
+    max-width: 250px !important;
+  }
+  .top-header-icons__user {
+    margin: 0 25px 0 0 !important;
+  }
+  .top-header-icons__user, .top-header-icons__twitter, .top-header-icons__facebook, .top-header-icons__instagram {
+    margin: 0 5px !important;
+  }
+  .logo-name {
+    font: normal 400 36px/75px "Bitstream Vera Serif", serif !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu .search_bar {
+    width: 250px !important;
+  }
+  .navbar-nav .nav-item {
+    margin: 0 20px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    text-transform: capitalize !important;
+  }
+  .navbar-light {
+    min-height: 100% !important;
+    height: 85px;
+  }
+  .navbar-nav .nav-item {
+    margin: 0 !important;
+  }
+  .navbar-nav .nav-item:first-child {
+    margin: 0 !important;
+  }
+  .navbar-nav .nav-item:last-child {
+    margin: 0 !important;
+  }
+  .logo-menu-white {
+    max-height: 70px !important;
+  }
+  .container {
+    max-width: 100% !important;
+  }
+  .menu {
+    margin-bottom: 15px !important;
+  }
+  .navbar-light .container {
+    max-width: 100% !important;
+  }
+  .navbar-brand {
+    margin-left: 15px !important;
+  }
+  .navbar-light .navbar-toggler {
+    margin-right: 15px !important;
+  }
+  .top-header {
+    display: none !important;
+  }
+  .navbar-brand {
+    display: flex !important;
+  }
+  .navbar-light {
+    background-color: #334166 !important;
+  }
+  .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-brand img {
+    margin-right: 10px;
+  }
+  .menu .search_bar .icon-search {
+    height: 17px !important;
+    width: 17px !important;
+    top: 7px !important;
+  }
+  .top-menu-icons {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .top-menu-icons .icon-top-menu {
+    fill: #b3b9ce;
+    height: 25px;
+    width: 25px;
+  }
+  .top-menu-icons a {
+    padding: 0 25px;
+  }
+  .top-menu-icons a:first-child {
+    padding: 0 25px 0 0;
+  }
+  .top-menu-icons a:last-child {
+    padding: 0 0 0 25px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font: normal 300 24px/36px "Roboto", sans-serif !important;
+    letter-spacing: 0.01em;
+    color: #334166 !important;
+  }
+  .nav-link:after {
+    bottom: 0 !important;
+  }
+  .navbar-light .navbar-nav .active .nav-link:after {
+    display: none !important;
+  }
+  .navbar-nav .nav-item {
+    margin: 0 !important;
+  }
+  .navbar-nav .nav-item:first-child {
+    margin: 0 !important;
+  }
+  .navbar-nav .nav-item:last-child {
+    margin: 0 !important;
+  }
+  .menu .search_bar {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 20px 0 30px !important;
+    background: #fff !important;
+  }
+  .menu .search_bar input[type=search] {
+    background: #fff !important;
+  }
+  .menu .search_bar button[type=submit] {
+    background: #fff !important;
+  }
+  .user-mobile-icons {
+    display: inline-block !important;
+    position: absolute !important;
+    top: calc(50% - 14px) !important;
+    right: 50px !important;
+  }
+  .icon-mobile {
+    height: 18px;
+    width: 16px;
+  }
+  .navbar-nav .nav-item {
+    font: normal 300 30px/36px "Roboto", sans-serif !important;
+  }
+  .top-header-icons {
+    display: none !important;
+  }
+  .logo-name {
+    font: normal 400 36px/75px "Bitstream Vera Serif", serif !important;
+  }
+  .mini-nav-bar {
+    display: block !important;
+  }
+  .mini-nav-bar .nav-item .nav-link {
+    font: normal 300 18px/27px "Roboto", sans-serif !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    margin-bottom: 0 !important;
+  }
+  .user-mobile-icons {
+    right: 80px !important;
+  }
+  .top-header {
+    min-height: auto !important;
+  }
+  .logo-name {
+    font: normal 300 26px/75px "Roboto", sans-serif !important;
+  }
+  .logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-menu img {
+    width: 50px;
+    height: 40px;
+  }
+  .page-footer .bottom-menu li {
+    padding: 0 15px !important;
+  }
+  .page-footer .bottom-menu li:first-child {
+    padding: 0 15px 0 0 !important;
+  }
+  .page-footer .bottom-menu li:last-child {
+    padding: 0 0 0 15px !important;
+  }
+}
+
+
+@media screen and (max-width: 630px) {
+  .page-footer .bottom-menu li {
+      padding: 15px 0 !important;
+      width: 100%;
+  }
+  .page-footer .bottom-menu li:first-child {
+      padding: 0 0 15px !important;
+      width: 100%;
+  }
+  .page-footer .bottom-menu li:last-child {
+      padding: 15px 0 0 !important;
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .navbar-light .navbar-toggler {
+    margin-right: 0px !important;
+  }
+  .navbar-brand {
+    margin-left: 0px !important;
+}
+  .navbar-light {
+    height: 50px !important;
+  }
+  .page-footer .footer-copyright {
+    color: #b3b9ce !important;
+  }
+  .logo-menu-blue {
+    display: inline-block !important;
+  }
+  .logo-menu-white {
+    max-height: 30px !important;
+    width: auto !important;
+  }
+  .logo-menu {
+    justify-content: flex-start !important;
+  }
+  .logo-name {
+    font: normal 300 18px/normal "Roboto", sans-serif !important;
+    color: #fff !important;
+    justify-content: flex-start !important;
+  }
+  .top-header {
+    max-height: 55px;
+  }
+  .search_bar button {
+    margin-top: 0 !important;
+  }
+  .page-footer .footer-copyright {
+    font: normal 400 10px/normal "Roboto", sans-serif !important;
+  }
+  .text-right {
+    padding-right: 0;
+  }
+  .top-header {
+    background-color: #eaeaf2 !important;
+  }
+  .page-footer .bottom-menu li {
+    padding: 5px 0 !important;
+  }
+  .page-footer .bottom-menu li:first-child {
+    padding: 0 0 5px !important;
+  }
+  .page-footer .bottom-menu li:last-child {
+    padding: 5px 0 0 !important;
+  }
+  .fide-carousel-block .col-lg-12 {
+    padding: 0 !important;
+  }
+  .search_bar input {
+    font: normal 400 14px/17px "Roboto", sans-serif !important;
+  }
+  .icon-search {
+    height: 15px !important;
+    width: 15px !important;
+    top: 11px !important;
+  }
+  ::-webkit-input-placeholder {
+    font: normal 400 14px/17px "Roboto", sans-serif !important;
+  }
+  ::-moz-placeholder {
+    font: normal 400 14px/17px "Roboto", sans-serif !important;
+  }
+  :-moz-placeholder {
+    font: normal 400 14px/17px "Roboto", sans-serif !important;
+  }
+  :-ms-input-placeholder {
+    font: normal 400 14px/17px "Roboto", sans-serif !important;
+  }
+  .menu {
+    margin-bottom: 0;
+  }
+  .rectangle-menu .rectangle-menu-one {
+    font: normal 400 14px/19px "Roboto", sans-serif !important;
+  }
+  .rectangle-menu .rectangle-menu-active {
+    font: normal 600 14px/19px "Roboto", sans-serif !important;
+  }
+  .navbar-light {
+    min-height: 40px !important;
+    background-color: #334166 !important;
+    padding: 0 1rem !important;
+  }
+  .logo-menu-white {
+    max-height: 40px !important;
+  }
+}
+
+
+@media screen and (max-width: 465px) {
+  .logo-name {
+      line-height: normal !important;
+      font-family: "Bitstream Vera Serif", arial, sans-serif !important;
+      font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .user-mobile-icons {
+      right: 45px !important;
+  }
+  .text-right {
+      padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo-name {
+      line-height: normal !important;
+      font-family: "Bitstream Vera Serif", arial, sans-serif !important;
+      font-size: 14px !important;
+  }
+  .logo-menu img {
+      padding: 5px !important;
+  }
+  .text-right {
+      padding-left: 6%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar-brand img {
+    margin-right: 5px;
+  }
+  .logo-name {
+      font-size: 11px !important;
+  }
+  .navbar-light .navbar-nav .nav-link {
+      font: normal 300 24px/36px "Roboto", sans-serif !important;
+  }
+  .navbar-light {
+      height: 50px !important;
+  }
+  .text-right {
+      padding-left: 7%;
+  }
+}
+
+/* Log out */
+
+@media screen and (max-width: 1500px) {
+  .modal-log-out {
+      right: 0px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .modal-log-out {
+      top: 85px !important;
+      border-top-right-radius: 0px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-log-out__wrapper__user .modal-log-email .modal-log-out-email {
+      font: normal 600 14px/22px "Roboto", sans-serif !important;
+  }
+  .modal-log-out__wrapper__user .modal-log-email .name-email {
+      font: normal 400 14px/22px "Roboto", sans-serif !important;
+  }
+  .modal-log-out__wrapper__button {
+      font: normal 400 14px/22px "Roboto", sans-serif !important;
+  }
+  .modal-log-out__wrapper__events {
+      font: normal 400 14px/22px "Roboto", sans-serif !important;
+  }
+  .modal-log-out__wrapper__edit {
+      font: normal 400 14px/22px "Roboto", sans-serif !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-log-out {
+      border-top-left-radius: 0px !important;
+      width: 100% !important;
+  }
+  .modal-log-out__wrapper__button {
+      width: calc(100% - 70% - 1px) !important;
+      margin: 10px 35% !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .modal-log-out {
+      top: 50px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .modal-log-out__wrapper__button {
+      width: calc(100% - 50% - 1px) !important;
+      margin: 10px 25% !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .modal-log-out {
+      top: 45px !important;
+  }
+}
+
+
